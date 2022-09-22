@@ -12,7 +12,7 @@ import {
   DeserializedFarmConfig,
   FetchStatus,
 } from 'config/constants/types'
-import { Token, ChainId } from '@pancakeswap/sdk'
+import { Token, ChainId } from '@smartdev1990/sdkv4'
 import { TokenInfo, TokenList, Tags } from '@uniswap/token-lists'
 import { parseUnits } from '@ethersproject/units'
 import { NftToken, State as NftMarketState } from './nftMarket/types'
@@ -49,6 +49,7 @@ export interface TagInfo extends TagDetails {
  * An empty result, useful as a default.
  */
 export const EMPTY_LIST: TokenAddressMap = {
+  [ChainId.BRISE]: {},
   [ChainId.MAINNET]: {},
   [ChainId.TESTNET]: {},
 }

@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Pair, Route, Token, TokenAmount, Trade, TradeType } from '@pancakeswap/sdk'
+import { ChainId, JSBI, Pair, Route, Token, TokenAmount, Trade, TradeType } from '@smartdev1990/sdkv4'
 import { computeTradePriceBreakdown } from 'utils/prices'
 
 describe('prices', () => {

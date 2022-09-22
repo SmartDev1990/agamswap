@@ -1,4 +1,4 @@
-import { Percent } from '@pancakeswap/sdk'
+import { Percent } from '@smartdev1990/sdkv4'
 import { TranslateFunction } from 'contexts/Localization/types'
 
 export enum PercentageDirection {

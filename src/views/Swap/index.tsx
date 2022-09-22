@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import styled from 'styled-components'
-import { CurrencyAmount, JSBI, Token, Trade } from '@pancakeswap/sdk'
+import { CurrencyAmount, JSBI, Token, Trade } from '@smartdev1990/sdkv4'
 import {
   Button,
   Text,

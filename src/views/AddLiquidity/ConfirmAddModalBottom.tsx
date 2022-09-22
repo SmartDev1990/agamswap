@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Fraction, Percent } from '@pancakeswap/sdk'
+import { Currency, CurrencyAmount, Fraction, Percent } from '@smartdev1990/sdkv4'
 import { Button, Text } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { RowBetween, RowFixed } from '../../components/Layout/Row'

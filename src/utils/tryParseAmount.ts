@@ -1,5 +1,5 @@
 import { parseUnits } from '@ethersproject/units'
-import { Currency, CurrencyAmount, JSBI, Token, TokenAmount } from '@pancakeswap/sdk'
+import { Currency, CurrencyAmount, JSBI, Token, TokenAmount } from '@smartdev1990/sdkv4'
 
 // try to parse a user entered amount for a given token
 const tryParseAmount = (value?: string, currency?: Currency): CurrencyAmount | TokenAmount | undefined => {

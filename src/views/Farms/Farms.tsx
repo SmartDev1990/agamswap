@@ -2,7 +2,7 @@ import { useEffect, useCallback, useState, useMemo, useRef, createContext } from
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
 import { Image, Heading, RowType, Toggle, Text, Button, ArrowForwardIcon, Flex, Link } from '@pancakeswap/uikit'
-import { ChainId } from '@pancakeswap/sdk'
+import { ChainId } from '@smartdev1990/sdkv4'
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import styled from 'styled-components'
 import FlexLayout from 'components/Layout/Flex'
@@ -181,7 +181,7 @@ const Farms: React.FC = ({ children }) => {
               new BigNumber(farm.poolWeight),
               cakePrice,
               totalLiquidity,
-              farm.lpAddresses[ChainId.MAINNET],
+              farm.lpAddresses[ChainId.BRISE],
               regularCakePerBlock,
             )
           : { cakeRewardsApr: 0, lpRewardsApr: 0 }

@@ -1,4 +1,4 @@
-import { TokenAmount, Pair, Currency } from '@pancakeswap/sdk'
+import { TokenAmount, Pair, Currency } from '@smartdev1990/sdkv4'
 import { useMemo } from 'react'
 import IPancakePairABI from 'config/abi/IPancakePair.json'
 import { Interface } from '@ethersproject/abi'

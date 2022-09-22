@@ -49,20 +49,36 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
     ],
   },
   {
-    label: t('Pools'),
-    href: '/NotFound',
-   icon: EarnIcon,
+    label: t('farm'),
+    href: '/farms',
+    icon: EarnIcon,
     fillIcon: EarnFillIcon,
     items: [
-      // {
-      //   label: t('Farms'),
-      //   href: '/farms',
-      // },
-      // {
-      //   label: t('Pools'),
-      //   href: '/pools',
-      // },
-   ],
+      //     {
+      //       label: t('Farms'),
+      //       href: '/farms',
+      //     },
+      //     {
+      //       label: t('Pools'),
+      //       href: '/pools',
+      //     },
+    ],
+  },
+  {
+    label: t('stake'),
+    href: '/pools',
+    icon: EarnIcon,
+    fillIcon: EarnFillIcon,
+    items: [
+      //     {
+      //       label: t('Farms'),
+      //       href: '/farms',
+      //     },
+      //     {
+      //       label: t('Pools'),
+      //       href: '/pools',
+      //      },
+    ],
   },
   // {
   //   label: t('Win'),
@@ -87,22 +103,22 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
   // },
   {
     label: t('NFT'),
-    href: `https://agam.design`,
+    href: `${nftsBaseUrl}`,
     icon: NftIcon,
     fillIcon: NftFillIcon,
     items: [
-      // {
-      //   label: t('Overview'),
-      //   href: `${nftsBaseUrl}`,
-      // },
-      // {
-      //   label: t('Collections'),
-      //   href: `${nftsBaseUrl}/collections`,
-      // },
-      // {
-      //   label: t('Activity'),
-      //   href: `${nftsBaseUrl}/activity`,
-      // },
+      {
+        label: t('Overview'),
+        href: `${nftsBaseUrl}`,
+      },
+      {
+        label: t('Collections'),
+        href: `${nftsBaseUrl}/collections`,
+      },
+      {
+        label: t('Activity'),
+        href: `${nftsBaseUrl}/activity`,
+      },
     ],
   },
   {
@@ -112,16 +128,16 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
     hideSubNav: true,
     items: [
       {
-        label: t('English Website'),
-        href: 'https://agam.finance/',
+        label: t('Info'),
+        href: '/info',
       },
+      // {
+      //   label: t('IFO'),
+      //   href: '/ifo',
+      // },
       {
-        label: t('Spanish Website'),
-        href: 'https://agam.finance/spanish',
-      },
-      {
-        label: t('White Paper'),
-        href: '/',
+        label: t('Voting'),
+        href: '/voting',
       },
       // {
       //   type: DropdownMenuItemType.DIVIDER,
@@ -138,11 +154,11 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
       //   href: 'https://medium.com/pancakeswap',
       //   type: DropdownMenuItemType.EXTERNAL_LINK,
       // },
-      // {
-      //   label: t('Docs'),
-      //   href: 'https://docs.pancakeswap.finance',
-      //   type: DropdownMenuItemType.EXTERNAL_LINK,
-      // },
+      {
+        label: t('Docs'),
+        href: 'https://docs.pancakeswap.finance',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+      },
     ],
   },
 ]

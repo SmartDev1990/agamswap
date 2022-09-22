@@ -36,8 +36,8 @@ export interface Message {
   sig: string
 }
 
-const STRATEGIES = [{ name: 'cake', params: { symbol: 'CAKE', address: tokens.cake.address, decimals: 18, max: 300 } }]
-const NETWORK = '56'
+const STRATEGIES = [{ name: 'rice', params: { symbol: 'RICE', address: tokens.rice.address, decimals: 18, max: 300 } }]
+const NETWORK = '32520'
 
 /**
  * Generates metadata required by snapshot to validate payload

@@ -1,4 +1,4 @@
-import { Price } from '@pancakeswap/sdk'
+import { Price } from '@smartdev1990/sdkv4'
 import { Text, AutoRenewIcon } from '@pancakeswap/uikit'
 import { StyledBalanceMaxMini } from './styleds'
 

@@ -12,7 +12,7 @@ const StyledPage = styled.div<{ $removePadding: boolean; $noMinHeight }>`
   padding: ${({ $removePadding }) => ($removePadding ? '0' : '16px')};
   padding-bottom: 0;
   min-height: ${({ $noMinHeight }) => ($noMinHeight ? 'initial' : 'calc(100vh - 64px)')};
-  background: linear-gradient(90deg, rgba(139,59,142,1) 0%, rgba(89,47,144,1) 49%, rgba(67,14,70,1) 100%);
+  background: linear-gradient(90deg, rgba(139, 59, 142, 1) 0%, rgba(89, 47, 144, 1) 49%, rgba(67, 14, 70, 1) 100%);
 
   ${({ theme }) => theme.mediaQueries.xs} {
     background-size: auto;

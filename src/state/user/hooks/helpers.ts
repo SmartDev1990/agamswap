@@ -1,4 +1,4 @@
-import { Token } from '@pancakeswap/sdk'
+import { Token } from '@smartdev1990/sdkv4'
 import { SerializedToken } from 'config/constants/types'
 import { WrappedTokenInfo } from 'state/types'
 

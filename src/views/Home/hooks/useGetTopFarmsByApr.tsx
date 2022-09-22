@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { ChainId } from '@pancakeswap/sdk'
+import { ChainId } from '@smartdev1990/sdkv4'
 import { useFarms, usePriceCakeBusd } from 'state/farms/hooks'
 import { useAppDispatch } from 'state'
 import farmsConfig from 'config/constants/farms'
@@ -51,7 +51,7 @@ const useGetTopFarmsByApr = (isIntersecting: boolean) => {
           farm.poolWeight,
           cakePriceBusd,
           totalLiquidity,
-          farm.lpAddresses[ChainId.MAINNET],
+          farm.lpAddresses[ChainId.BRISE],
           regularCakePerBlock,
         )
         return { ...farm, apr: cakeRewardsApr, lpRewardsApr }

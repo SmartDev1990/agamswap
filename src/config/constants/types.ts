@@ -1,5 +1,10 @@
 import BigNumber from 'bignumber.js'
-import { Token } from '@pancakeswap/sdk'
+import { ChainId, Token } from '@smartdev1990/sdkv4'
+
+// a list of tokens by chain
+export type ChainTokenList = {
+  readonly [chainId in ChainId]: Token[]
+}
 
 export type TranslatableText =
   | string
@@ -10,8 +15,9 @@ export type TranslatableText =
       }
     }
 export interface Address {
-  97?: string
   56: string
+  97?: string
+  32520: string
 }
 
 export interface SerializedToken {

@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-syntax */
 import { KeyboardEvent, RefObject, useCallback, useMemo, useRef, useState, useEffect } from 'react'
-import { Currency, ETHER, Token } from '@pancakeswap/sdk'
+import { Currency, ETHER, Token } from '@smartdev1990/sdkv4'
 import { Text, Input, Box } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { FixedSizeList } from 'react-window'

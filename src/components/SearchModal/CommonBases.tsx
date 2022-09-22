@@ -1,4 +1,4 @@
-import { ChainId, Currency, currencyEquals, ETHER, Token } from '@pancakeswap/sdk'
+import { ChainId, Currency, currencyEquals, ETHER, Token } from '@smartdev1990/sdkv4'
 import { Text } from '@pancakeswap/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'

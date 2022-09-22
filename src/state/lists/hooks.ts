@@ -1,4 +1,4 @@
-import { ChainId } from '@pancakeswap/sdk'
+import { ChainId } from '@smartdev1990/sdkv4'
 import { TokenList } from '@uniswap/token-lists'
 import { useMemo } from 'react'
 import uniqBy from 'lodash/uniqBy'
@@ -165,6 +165,7 @@ export function useAllLists(): {
 
 function combineMaps(map1: TokenAddressMap, map2: TokenAddressMap): TokenAddressMap {
   return {
+    [ChainId.BRISE]: { ...map1[ChainId.BRISE], ...map2[ChainId.BRISE] },
     [ChainId.MAINNET]: { ...map1[ChainId.MAINNET], ...map2[ChainId.MAINNET] },
     [ChainId.TESTNET]: { ...map1[ChainId.TESTNET], ...map2[ChainId.TESTNET] },
   }

@@ -1,4 +1,4 @@
 const getTokenLogoURL = (address: string) =>
-  `https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/${address}/logo.png`
+  `https://github.com/SmartDev1990/default-token-list/tree/main/assets/tokens/brise/${address}/logo.png`
 
 export default getTokenLogoURL

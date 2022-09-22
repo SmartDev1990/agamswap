@@ -1,4 +1,4 @@
-import { Token } from '@pancakeswap/sdk'
+import { Token } from '@smartdev1990/sdkv4'
 import { Modal, InjectedModalProps } from '@pancakeswap/uikit'
 import ImportToken from 'components/SearchModal/ImportToken'
 import { useTranslation } from 'contexts/Localization'

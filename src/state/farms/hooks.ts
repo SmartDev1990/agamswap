@@ -1,4 +1,4 @@
-import { ChainId } from '@pancakeswap/sdk'
+import { ChainId } from '@smartdev1990/sdkv4'
 import { useWeb3React } from '@web3-react/core'
 import BigNumber from 'bignumber.js'
 import { farmsConfig, SLOW_INTERVAL } from 'config/constants'
@@ -52,7 +52,7 @@ export const usePollFarmsWithUserData = () => {
  * 2 = CAKE-BNB LP
  * 3 = BUSD-BNB LP
  */
-const coreFarmPIDs = CHAIN_ID === String(ChainId.MAINNET) ? [2, 3] : [1, 2]
+const coreFarmPIDs = CHAIN_ID === String(ChainId.BRISE) ? [2, 3] : [1, 2]
 export const usePollCoreFarmData = () => {
   const dispatch = useAppDispatch()
 

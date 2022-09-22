@@ -1,4 +1,4 @@
-import { Currency } from '@pancakeswap/sdk'
+import { Currency } from '@smartdev1990/sdkv4'
 import styled from 'styled-components'
 import CurrencyLogo from './CurrencyLogo'
 

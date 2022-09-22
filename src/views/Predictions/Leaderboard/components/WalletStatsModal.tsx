@@ -19,7 +19,7 @@ import useTheme from 'hooks/useTheme'
 import styled from 'styled-components'
 import { getBscScanLink } from 'utils'
 import truncateHash from 'utils/truncateHash'
-import { Token } from '@pancakeswap/sdk'
+import { Token } from '@smartdev1990/sdkv4'
 
 import { useTranslation } from 'contexts/Localization'
 import { FetchStatus } from 'config/constants/types'

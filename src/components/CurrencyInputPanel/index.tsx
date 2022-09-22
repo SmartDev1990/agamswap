@@ -1,4 +1,4 @@
-import { Currency, Pair, Token } from '@pancakeswap/sdk'
+import { Currency, Pair, Token } from '@smartdev1990/sdkv4'
 import { Button, ChevronDownIcon, Text, useModal, Flex, Box, MetamaskIcon } from '@pancakeswap/uikit'
 import styled from 'styled-components'
 import { registerToken } from 'utils/wallet'

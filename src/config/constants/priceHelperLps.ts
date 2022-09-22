@@ -11,12 +11,13 @@ const priceHelperLps: SerializedFarmConfig[] = [
    */
   {
     pid: null,
-    lpSymbol: 'ANKR-BNB LP',
+    lpSymbol: 'RICE-BRISE LP',
     lpAddresses: {
+      32520: '',
       97: '',
-      56: '0x3147F98B8f9C53Acdf8F16332eaD12B592a1a4ae',
+      56: '',
     },
-    token: tokens.ankr,
+    token: tokens.rice,
     quoteToken: tokens.wbnb,
   },
 ]

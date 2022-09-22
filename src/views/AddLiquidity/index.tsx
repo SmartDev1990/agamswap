@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { BigNumber } from '@ethersproject/bignumber'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Currency, currencyEquals, ETHER, TokenAmount, WETH } from '@pancakeswap/sdk'
+import { Currency, currencyEquals, ETHER, TokenAmount, WETH } from '@smartdev1990/sdkv4'
 import {
   Button,
   Text,

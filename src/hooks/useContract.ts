@@ -41,7 +41,7 @@ import { Erc20, Erc20Bytes32, Multicall, Weth, Cake, Erc721collection, CakeVault
 
 // Imports below migrated from Exchange useContract.ts
 import { Contract } from '@ethersproject/contracts'
-import { WETH } from '@pancakeswap/sdk'
+import { WETH } from '@smartdev1990/sdkv4'
 import IPancakePairABI from '../config/abi/IPancakePair.json'
 import { ERC20_BYTES32_ABI } from '../config/abi/erc20'
 import ERC20_ABI from '../config/abi/erc20.json'
@@ -180,15 +180,6 @@ export const useTradingCompetitionContractMobox = (withSignerIfPossible = true) 
     [withSignerIfPossible, library, account],
   )
   return useMemo(() => getTradingCompetitionContractMobox(signer), [signer])
-}
-
-export const useTradingCompetitionContractMoD = (withSignerIfPossible = true) => {
-  const { library, account } = useActiveWeb3React()
-  const signer = useMemo(
-    () => (withSignerIfPossible ? getProviderOrSigner(library, account) : null),
-    [withSignerIfPossible, library, account],
-  )
-  return useMemo(() => getTradingCompetitionContractMoD(signer), [signer])
 }
 
 export const useEasterNftContract = () => {

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, ETHER, Token, Trade } from '@pancakeswap/sdk'
+import { Currency, CurrencyAmount, ETHER, Token, Trade } from '@smartdev1990/sdkv4'
 import { ParsedUrlQuery } from 'querystring'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { DEFAULT_INPUT_CURRENCY, DEFAULT_OUTPUT_CURRENCY, SLOW_INTERVAL } from 'config/constants'
@@ -94,9 +94,9 @@ export function useSwapActionHandlers(): {
 }
 
 const BAD_RECIPIENT_ADDRESSES: string[] = [
-  '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // v2 factory
-  '0xf164fC0Ec4E93095b804a4795bBe1e041497b92a', // v2 router 01
-  '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D', // v2 router 02
+  '0x09FB691A786284e99D122D2B68dE40D253fec299', // v2 factory
+  '0x9507fF69c722bD69FCf42794c92c1C2D0A0f118d', // v2 router 01
+  '0x9507fF69c722bD69FCf42794c92c1C2D0A0f118d', // v2 router 02
 ]
 
 /**

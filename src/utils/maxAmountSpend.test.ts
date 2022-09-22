@@ -1,4 +1,4 @@
-import { CurrencyAmount, JSBI } from '@pancakeswap/sdk'
+import { CurrencyAmount, JSBI } from '@smartdev1990/sdkv4'
 import { maxAmountSpend } from './maxAmountSpend'
 
 describe('maxAmountSpend', () => {

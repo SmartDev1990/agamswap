@@ -1,12 +1,16 @@
 // Set of helper functions to facilitate wallet setup
 
 import { ExternalProvider } from '@ethersproject/providers'
-import { ChainId } from '@pancakeswap/sdk'
+import { ChainId } from '@smartdev1990/sdkv4'
 import { BAD_SRCS } from 'components/Logo/Logo'
 import { BASE_BSC_SCAN_URLS } from 'config'
 import { nodes } from './getRpcUrl'
 
 const NETWORK_CONFIG = {
+  [ChainId.BRISE]: {
+    name: 'Brise Mainnet',
+    scanURL: BASE_BSC_SCAN_URLS[ChainId.BRISE],
+  },
   [ChainId.MAINNET]: {
     name: 'BNB Smart Chain Mainnet',
     scanURL: BASE_BSC_SCAN_URLS[ChainId.MAINNET],
@@ -45,8 +49,8 @@ export const setupNetwork = async (externalProvider?: ExternalProvider) => {
                 chainId: `0x${chainId.toString(16)}`,
                 chainName: NETWORK_CONFIG[chainId].name,
                 nativeCurrency: {
-                  name: 'BNB',
-                  symbol: 'bnb',
+                  name: 'BRISE',
+                  symbol: 'brise',
                   decimals: 18,
                 },
                 rpcUrls: nodes,

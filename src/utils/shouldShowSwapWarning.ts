@@ -1,4 +1,4 @@
-import { Token } from '@pancakeswap/sdk'
+import { Token } from '@smartdev1990/sdkv4'
 import SwapWarningTokens from 'config/constants/swapWarningTokens'
 
 const swapWarningTokens = Object.values(SwapWarningTokens)

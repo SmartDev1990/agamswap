@@ -1,4 +1,4 @@
-import { Percent } from '@pancakeswap/sdk'
+import { Percent } from '@smartdev1990/sdkv4'
 import { ContextApi } from 'contexts/Localization/types'
 import { ALLOWED_PRICE_IMPACT_HIGH, PRICE_IMPACT_WITHOUT_FEE_CONFIRM_MIN } from '../../../config/constants'
 

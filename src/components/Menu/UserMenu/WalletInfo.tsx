@@ -19,7 +19,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowBnbBalance, onDismiss }) 
   const { t } = useTranslation()
   const { account } = useWeb3React()
   const { balance, fetchStatus } = useGetBnbBalance()
-  const { balance: cakeBalance, fetchStatus: cakeFetchStatus } = useTokenBalance(tokens.cake.address)
+  const { balance: cakeBalance, fetchStatus: cakeFetchStatus } = useTokenBalance(tokens.rice.address)
   const { logout } = useAuth()
 
   const handleLogout = () => {
@@ -42,7 +42,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowBnbBalance, onDismiss }) 
         </Message>
       )}
       <Flex alignItems="center" justifyContent="space-between">
-        <Text color="textSubtle">{t('BNB Balance')}</Text>
+        <Text color="textSubtle">{t('BRISE Balance')}</Text>
         {fetchStatus !== FetchStatus.Fetched ? (
           <Skeleton height="22px" width="60px" />
         ) : (
@@ -50,7 +50,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowBnbBalance, onDismiss }) 
         )}
       </Flex>
       <Flex alignItems="center" justifyContent="space-between" mb="24px">
-        <Text color="textSubtle">{t('CAKE Balance')}</Text>
+        <Text color="textSubtle">{t('RICE Balance')}</Text>
         {cakeFetchStatus !== FetchStatus.Fetched ? (
           <Skeleton height="22px" width="60px" />
         ) : (
