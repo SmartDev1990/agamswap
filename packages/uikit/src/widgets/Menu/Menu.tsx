@@ -147,7 +147,7 @@ const Menu: React.FC<NavProps> = ({
                   langs={langs}
                   setLang={setLang}
                   buttonScale="xs"
-                  color="textSubtle"
+                  color="mytext"
                   hideLanguage
                 />
               </Box>
