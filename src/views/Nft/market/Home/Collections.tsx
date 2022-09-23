@@ -21,7 +21,7 @@ const Collections: React.FC<{ title: string; testId: string; collections: Collec
         </Heading>
         <Button
           as={NextLinkFromReactRouter}
-          to={`${nftsBaseUrl}/collections/`}
+          to={`${nftsBaseUrl}/#/`}
           variant="secondary"
           scale="sm"
           endIcon={<ChevronRightIcon color="primary" width="24px" />}

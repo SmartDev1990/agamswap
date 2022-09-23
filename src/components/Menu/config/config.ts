@@ -113,11 +113,11 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
       },
       {
         label: t('Collections'),
-        href: `${nftsBaseUrl}/collections`,
+        href: `${nftsBaseUrl}/#`,
       },
       {
         label: t('Activity'),
-        href: `${nftsBaseUrl}/activity`,
+        href: `${nftsBaseUrl}/#`,
       },
     ],
   },
