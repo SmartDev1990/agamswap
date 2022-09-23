@@ -56,11 +56,11 @@ const Home: React.FC = () => {
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background={
           theme.isDark
-            ? 'linear-gradient(103.12deg, #064D45 0%, #064D45 100%)'
+            ? 'linear-gradient(139.73deg, #FE8800 0%, #024942 100%)'
             : 'linear-gradient(139.73deg, #FE8800 0%, #fff 100%)'
         }
         index={2}
-        hasCurvedDivider={false}
+        hasCurvedDivider={true}
       >
         <Hero />
       </StyledHeroSection>
