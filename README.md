@@ -1,4 +1,4 @@
-# 🥞 Pancake Frontend
+# 🥞 Rice SWap
 
 This project contains the main features of the pancake application.
 
@@ -6,9 +6,8 @@ If you want to contribute, please refer to the [contributing guidelines](./CONTR
 
 ## Documentation
 
-- [Info](doc/Info.md)
-- [Cypress tests](doc/Cypress.md)
-
+-   [Info](doc/Info.md)
+-   [Cypress tests](doc/Cypress.md)
 
 ## Quick Start
 
@@ -19,11 +18,13 @@ yarn
 ```
 
 start the development server
+
 ```sh
 yarn dev
 ```
 
 build with production mode
+
 ```sh
 yarn build
 
