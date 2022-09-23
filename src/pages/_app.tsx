@@ -63,7 +63,7 @@ function MyApp(props: AppProps) {
           content="The most popular AMM on BSC! Earn RICE through yield farming or win it in the Lottery and Initial Farm Offerings (new token launch model pioneered by Rice-swap), NFTs, and more, on a platform you can trust."
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="🥞 PancakeSwap - A next evolution DeFi exchange on BNB Smart Chain (BSC)" />
+        <meta name="twitter:title" content="🥞 RiceSwap - A next evolution DeFi exchange on Bigert Chain" />
         <title>Agam Swap</title>
       </Head>
       <Providers store={store}>

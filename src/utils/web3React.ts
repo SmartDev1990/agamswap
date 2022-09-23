@@ -36,13 +36,12 @@ export const connectorsByName = {
     const { WalletLinkConnector } = await import('@web3-react/walletlink-connector')
     return new WalletLinkConnector({
       url: rpcUrl,
-      appName: 'PancakeSwap',
-      appLogoUrl: 'https://pancakeswap.com/logo.png',
+      appName: 'RiceSwap',
+      appLogoUrl: "https://i.ibb.co/G3V8HTd/1.png",
       supportedChainIds: [ChainId.BRISE, ChainId.MAINNET, ChainId.TESTNET],
     })
   },
 } as const
-
 export const getLibrary = (provider): Web3Provider => {
   const library = new Web3Provider(provider)
   library.pollingInterval = POLLING_INTERVAL

@@ -4,7 +4,7 @@ import { PageMeta } from './types'
 export const DEFAULT_META: PageMeta = {
   title: 'RiceSwap',
   description:
-    'The most popular AMM on BSC by user count! Earn CAKE through yield farming and Initial Farm Offerings (new token launch model pioneered by RiceSWap), NFTs, and more, on a platform you can trust.',
+    'The most popular AMM on BSC by user count! Earn RICE through yield farming and Initial Farm Offerings (new token launch model pioneered by RiceSWap), NFTs, and more, on a platform you can trust.',
   image: 'https://i.ibb.co/G3V8HTd/1.png',
 }
 
