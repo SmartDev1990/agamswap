@@ -53,7 +53,7 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
     href: '/404',
     icon: EarnIcon,
     fillIcon: EarnFillIcon,
-    items: [
+    // items: [
       //     {
       //       label: t('Farms'),
       //       href: '/farms',
@@ -62,14 +62,14 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
       //       label: t('Pools'),
       //       href: '/pools',
       //     },
-    ],
+    // ],
   },
   {
     label: t('stake'),
     href: '/404',
     icon: EarnIcon,
     fillIcon: EarnFillIcon,
-    items: [
+    // items: [
       //     {
       //       label: t('Farms'),
       //       href: '/farms',
@@ -78,7 +78,7 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
       //       label: t('Pools'),
       //       href: '/pools',
       //      },
-    ],
+    // ],
   },
   // {
   //   label: t('Win'),
@@ -106,7 +106,7 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
     href: `/404`,
     icon: NftIcon,
     fillIcon: NftFillIcon,
-    items: [
+    // items: [
       // {
       //   label: t('Overview'),
       //   href: `${nftsBaseUrl}`,
@@ -119,7 +119,7 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
       //   label: t('Activity'),
       //   href: `${nftsBaseUrl}/#`,
       // },
-    ],
+    // ],
   },
   // {
   //   label: '',
