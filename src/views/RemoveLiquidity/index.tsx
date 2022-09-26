@@ -135,6 +135,7 @@ export default function RemoveLiquidity() {
 	const [approval, approveCallback] = useApproveCallback(parsedAmounts[Field.LIQUIDITY], ROUTER_ADDRESS[CHAIN_ID])
 
 	async function onAttemptToApprove() {
+		approveCallback()
 		if (!pairContract || !pair || !library || !deadline) throw new Error('missing dependencies')
 		const liquidityAmount = parsedAmounts[Field.LIQUIDITY]
 		if (!liquidityAmount) {
