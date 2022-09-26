@@ -49,36 +49,20 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
     ],
   },
   {
-    label: t('farm'),
+    label: t('Earn'),
     href: '/404',
     icon: EarnIcon,
     fillIcon: EarnFillIcon,
-    // items: [
-      //     {
-      //       label: t('Farms'),
-      //       href: '/farms',
-      //     },
-      //     {
-      //       label: t('Pools'),
-      //       href: '/pools',
-      //     },
-    // ],
-  },
-  {
-    label: t('stake'),
-    href: '/404',
-    icon: EarnIcon,
-    fillIcon: EarnFillIcon,
-    // items: [
-      //     {
-      //       label: t('Farms'),
-      //       href: '/farms',
-      //     },
-      //     {
-      //       label: t('Pools'),
-      //       href: '/pools',
-      //      },
-    // ],
+    items: [
+      {
+        label: t('Farms'),
+        href: '/404',
+      },
+      {
+        label: t('Pools'),
+        href: '/404',
+      },
+    ],
   },
   // {
   //   label: t('Win'),
@@ -103,10 +87,10 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
   // },
   {
     label: t('NFT'),
-    href: `/404`,
+    href: ``,
     icon: NftIcon,
     fillIcon: NftFillIcon,
-    // items: [
+    items: [
       // {
       //   label: t('Overview'),
       //   href: `${nftsBaseUrl}`,
@@ -119,7 +103,7 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
       //   label: t('Activity'),
       //   href: `${nftsBaseUrl}/#`,
       // },
-    // ],
+    ],
   },
   // {
   //   label: '',
