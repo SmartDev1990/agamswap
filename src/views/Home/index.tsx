@@ -56,14 +56,22 @@ const Home: React.FC = () => {
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background={
           theme.isDark
-            ? 'radial-gradient(103.12% 50% at 50% 50%, #21193A 0%, #191326 100%)'
-            : 'linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)'
+            ? 'linear-gradient(139.73deg, #FE8800 0%, #024942 100%)'
+            : 'linear-gradient(139.73deg, #FE8800 0%, #fff 100%)'
         }
         index={2}
-        hasCurvedDivider={false}
+        hasCurvedDivider={true}
       >
         <Hero />
       </StyledHeroSection>
+      <PageSection
+        innerProps={{ style: HomeSectionContainerStyles }}
+        background="linear-gradient(180deg, #085247 0%, #024942 100%)"
+        index={2}
+        hasCurvedDivider={false}
+      >
+        <Footer />
+      </PageSection>
     </>
   )
 }

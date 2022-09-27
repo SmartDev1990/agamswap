@@ -53,7 +53,7 @@ const MenuItem: React.FC<FooterProps> = ({
                       href={href}
                       target="_blank"
                       rel="noreferrer noopener"
-                      color={isHighlighted ? baseColors.warning : darkColors.text}
+                      color={isHighlighted ? baseColors.warning : darkColors.mytext}
                       bold={false}
                     >
                       {label}
@@ -81,13 +81,13 @@ const MenuItem: React.FC<FooterProps> = ({
               currentLang={currentLang}
               langs={langs}
               setLang={setLang}
-              color={darkColors.textSubtle as keyof Colors}
+              color={darkColors.mytext as keyof Colors}
               dropdownPosition="top-right"
             />
           </Flex>
           <Flex order={[1, null, 2]} mb={["24px", null, "0"]} justifyContent="space-between" alignItems="center">
             <Box mr="20px">
-              <CakePrice cakePriceUsd={cakePriceUsd} color={darkColors.textSubtle as keyof Colors} />
+              <CakePrice cakePriceUsd={cakePriceUsd} color={darkColors.mytext as keyof Colors} />
             </Box>
             <Button
               as="a"

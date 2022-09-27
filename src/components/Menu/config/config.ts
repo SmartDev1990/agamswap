@@ -49,35 +49,19 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
     ],
   },
   {
-    label: t('farm'),
-    href: '/farms',
+    label: t('Earn'),
+    href: '/404',
     icon: EarnIcon,
     fillIcon: EarnFillIcon,
     items: [
-      //     {
-      //       label: t('Farms'),
-      //       href: '/farms',
-      //     },
-      //     {
-      //       label: t('Pools'),
-      //       href: '/pools',
-      //     },
-    ],
-  },
-  {
-    label: t('stake'),
-    href: '/pools',
-    icon: EarnIcon,
-    fillIcon: EarnFillIcon,
-    items: [
-      //     {
-      //       label: t('Farms'),
-      //       href: '/farms',
-      //     },
-      //     {
-      //       label: t('Pools'),
-      //       href: '/pools',
-      //      },
+      {
+        label: t('Farms'),
+        href: '/404',
+      },
+      {
+        label: t('Pools'),
+        href: '/404',
+      },
     ],
   },
   // {
@@ -103,41 +87,41 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
   // },
   {
     label: t('NFT'),
-    href: `${nftsBaseUrl}`,
+    href: ``,
     icon: NftIcon,
     fillIcon: NftFillIcon,
     items: [
-      {
-        label: t('Overview'),
-        href: `${nftsBaseUrl}`,
-      },
-      {
-        label: t('Collections'),
-        href: `${nftsBaseUrl}/collections`,
-      },
-      {
-        label: t('Activity'),
-        href: `${nftsBaseUrl}/activity`,
-      },
+      // {
+      //   label: t('Overview'),
+      //   href: `${nftsBaseUrl}`,
+      // },
+      // {
+      //   label: t('Collections'),
+      //   href: `${nftsBaseUrl}/#`,
+      // },
+      // {
+      //   label: t('Activity'),
+      //   href: `${nftsBaseUrl}/#`,
+      // },
     ],
   },
   {
-    label: '',
+    label: 'Features',
     href: '/info',
     icon: MoreIcon,
     hideSubNav: true,
     items: [
       {
         label: t('Info'),
-        href: '/info',
+        href: '',
       },
-      // {
-      //   label: t('IFO'),
-      //   href: '/ifo',
-      // },
+      {
+        label: t('IFO'),
+        href: '',
+      },
       {
         label: t('Voting'),
-        href: '/voting',
+        href: '',
       },
       // {
       //   type: DropdownMenuItemType.DIVIDER,
@@ -154,11 +138,11 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
       //   href: 'https://medium.com/pancakeswap',
       //   type: DropdownMenuItemType.EXTERNAL_LINK,
       // },
-      {
-        label: t('Docs'),
-        href: 'https://docs.pancakeswap.finance',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
+      //   {
+      //     label: t('Docs'),
+      //     href: 'https://docs.pancakeswap.finance',
+      //     type: DropdownMenuItemType.EXTERNAL_LINK,
+      //   },
     ],
   },
 ]

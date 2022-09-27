@@ -1,16 +1,33 @@
+// Factory 
+// '0x09FB691A786284e99D122D2B68dE40D253fec299', 
+
+import { Syrup__factory } from "config/abi/types"
+
+// Router  '0x9507fF69c722bD69FCf42794c92c1C2D0A0f118d',
+
+// MasterChef 
+// 0x96cD86Ea3ad217F968Ce0848Ae33A7FbBAbfa491
+
+// Farming 
+// 0xF88dac8E184676F1F5797ce4b6fAc55547B011Fc
+
+// Syrup__
+// factory0xd6274E2043bce7E2b2B84949e6a84A0a6C5C604D
+
+
 export default {
   masterChef: {
-    32520: '0xbABa7B69D1C900DA4F6430933a31DC492b106DeE',
+    32520: '0x96cD86Ea3ad217F968Ce0848Ae33A7FbBAbfa491',
     97: '',
     56: '0xa5f8C5Dbd5F286960b9d90548680aE5ebFf07652',
   },
   masterChefV1: {
-    32520: '0xbABa7B69D1C900DA4F6430933a31DC492b106DeE',
+    32520: '0x96cD86Ea3ad217F968Ce0848Ae33A7FbBAbfa491',
     97: '0x1d32c2945C8FDCBc7156c553B7cEa4325a17f4f9',
     56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
   },
   sousChef: {
-    32520: '',
+    32520: '0x421a5d63fcC7d60cE3E1Ab3E4b8993ae31087E0e',
     97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
     56: '0x6ab8463a4185b80905e05a9ff80a2d6b714b9e95',
   },
@@ -79,7 +96,7 @@ export default {
     97: '0x24ec6962dbe874F6B67B5C50857565667fA0854F',
   },
   cakeVault: {
-    32520: '',
+    32520: '0x262CB0F5fB2c32F91C64aB27522E5b07A157019d',
     56: '0x45c54210128a065de780C4B0Df3d16664f7f859e',
     97: '',
   },

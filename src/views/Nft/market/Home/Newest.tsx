@@ -49,7 +49,7 @@ const Newest: React.FC = () => {
         <Heading data-test="nfts-newest">{t('Newest Arrivals')}</Heading>
         <Button
           as={NextLinkFromReactRouter}
-          to={`${nftsBaseUrl}/activity/`}
+          to={`${nftsBaseUrl}/#/`}
           variant="secondary"
           scale="sm"
           endIcon={<ChevronRightIcon color="primary" />}
