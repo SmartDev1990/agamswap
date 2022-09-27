@@ -5,58 +5,58 @@ import { PageMeta } from 'components/Layout/Page'
 import { EXCHANGE_DOCS_URLS } from 'config/constants'
 
 const StyledPage = styled.div<{ $removePadding: boolean; $noMinHeight }>`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: ${({ $removePadding }) => ($removePadding ? '0' : '16px')};
-  padding-bottom: 0;
-  min-height: ${({ $noMinHeight }) => ($noMinHeight ? 'initial' : 'calc(100vh - 64px)')};
-  background: linear-gradient(90deg, rgba(246, 154, 45, 1) 0%, rgba(237, 188, 58, 1) 49%, rgba(255, 155, 36, 1) 100%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: ${({ $removePadding }) => ($removePadding ? '0' : '16px')};
+	padding-bottom: 0;
+	min-height: ${({ $noMinHeight }) => ($noMinHeight ? 'initial' : 'calc(100vh - 64px)')};
+	background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 49%, rgb(255, 255, 255) 100%);
 
-  ${({ theme }) => theme.mediaQueries.xs} {
-    background-size: auto;
-  }
+	${({ theme }) => theme.mediaQueries.xs} {
+		background-size: auto;
+	}
 
-  ${({ theme }) => theme.mediaQueries.sm} {
-    padding: ${({ $removePadding }) => ($removePadding ? '0' : '24px')};
-    padding-bottom: 0;
-  }
+	${({ theme }) => theme.mediaQueries.sm} {
+		padding: ${({ $removePadding }) => ($removePadding ? '0' : '24px')};
+		padding-bottom: 0;
+	}
 
-  ${({ theme }) => theme.mediaQueries.lg} {
-    padding: ${({ $removePadding }) => ($removePadding ? '0' : '32px')};
-    padding-bottom: 0;
-    min-height: ${({ $noMinHeight }) => ($noMinHeight ? 'initial' : 'calc(100vh - 100px)')};
-  }
+	${({ theme }) => theme.mediaQueries.lg} {
+		padding: ${({ $removePadding }) => ($removePadding ? '0' : '32px')};
+		padding-bottom: 0;
+		min-height: ${({ $noMinHeight }) => ($noMinHeight ? 'initial' : 'calc(100vh - 100px)')};
+	}
 `
 
 const Page: React.FC<
-  React.HTMLAttributes<HTMLDivElement> & {
-    removePadding?: boolean
-    hideFooterOnDesktop?: boolean
-    noMinHeight?: boolean
-    helpUrl?: string
-  }
+	React.HTMLAttributes<HTMLDivElement> & {
+		removePadding?: boolean
+		hideFooterOnDesktop?: boolean
+		noMinHeight?: boolean
+		helpUrl?: string
+	}
 > = ({
-  children,
-  removePadding = false,
-  hideFooterOnDesktop = false,
-  noMinHeight = false,
-  helpUrl = EXCHANGE_DOCS_URLS,
-  ...props
+	children,
+	removePadding = false,
+	hideFooterOnDesktop = false,
+	noMinHeight = false,
+	helpUrl = EXCHANGE_DOCS_URLS,
+	...props
 }) => {
-  return (
-    <>
-      <PageMeta />
-      <StyledPage $removePadding={removePadding} $noMinHeight={noMinHeight} {...props}>
-        {children}
-        <Flex flexGrow={1} />
-        <Box display={['block', null, null, hideFooterOnDesktop ? 'none' : 'block']} width="100%">
-          <Footer helpUrl={helpUrl} />
-        </Box>
-      </StyledPage>
-    </>
-  )
+	return (
+		<>
+			<PageMeta />
+			<StyledPage $removePadding={removePadding} $noMinHeight={noMinHeight} {...props}>
+				{children}
+				<Flex flexGrow={1} />
+				<Box display={['block', null, null, hideFooterOnDesktop ? 'none' : 'block']} width="100%">
+					<Footer helpUrl={helpUrl} />
+				</Box>
+			</StyledPage>
+		</>
+	)
 }
 
 export default Page
