@@ -10,12 +10,12 @@ const priceHelperLps: SerializedFarmConfig[] = [
    * Before storing to redux, farms without a PID are filtered out.
    */
   {
-    pid: null,
-    lpSymbol: 'RICE-BRISE LP',
+    pid: 2,
+    lpSymbol: 'RICE-BRISE lp',
     lpAddresses: {
-      32520: '',
-      97: '',
-      56: '',
+      32520: '0xd611F8869A282CfD79723836e061bC118eB40A9b',
+      97: '0xd611F8869A282CfD79723836e061bC118eB40A9b',
+      56: '0xd611F8869A282CfD79723836e061bC118eB40A9b',
     },
     token: tokens.rice,
     quoteToken: tokens.wbnb,

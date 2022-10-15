@@ -10,7 +10,7 @@ const fetchFarms = async (farmsToFetch: SerializedFarmConfig[]): Promise<Seriali
     fetchPublicFarmsData(farmsToFetch),
     fetchMasterChefData(farmsToFetch),
   ])
-
+  console.log(masterChefResult)
   return farmsToFetch.map((farm, index) => {
     const [tokenBalanceLP, quoteTokenBalanceLP, lpTokenBalanceMC, lpTotalSupply, tokenDecimals, quoteTokenDecimals] =
       farmResult[index]
@@ -32,6 +32,8 @@ const fetchFarms = async (farmsToFetch: SerializedFarmConfig[]): Promise<Seriali
 
     const allocPoint = info ? new BigNumber(info.allocPoint?._hex) : BIG_ZERO
     const poolWeight = totalRegularAllocPoint ? allocPoint.div(new BigNumber(totalRegularAllocPoint)) : BIG_ZERO
+    
+    console.log(farm)
 
     return {
       ...farm,

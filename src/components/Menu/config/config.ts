@@ -56,11 +56,11 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
     items: [
       {
         label: t('Farms'),
-        href: '/404',
+        href: '/farms',
       },
       {
         label: t('Pools'),
-        href: '/404',
+        href: '/pools',
       },
     ],
   },
