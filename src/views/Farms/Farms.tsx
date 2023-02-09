@@ -420,7 +420,7 @@ const Farms: React.FC = ({ children }) => {
             </LabelWrapper>
             <LabelWrapper style={{ marginLeft: 16 }}>
               <Text textTransform="uppercase">{t('Search')}</Text>
-              <SearchInput onChange={handleChangeQuery} placeholder="Search Farms" />
+              <SearchInput onChange={handleChangeQuery} placeholder="Search RICE Farms" />
             </LabelWrapper>
           </FilterContainer>
         </ControlContainer>

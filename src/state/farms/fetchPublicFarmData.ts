@@ -7,6 +7,7 @@ import { SerializedFarmConfig } from '../../config/constants/types'
 
 const fetchFarmCalls = (farm: SerializedFarm) => {
   const { lpAddresses, token, quoteToken } = farm
+  console.log(farm)
   const lpAddress = getAddress(lpAddresses)
   return [
     // Balance of token in the LP contract

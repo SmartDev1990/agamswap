@@ -5,24 +5,24 @@ import { useTranslation } from 'contexts/Localization'
 import truncateHash from 'utils/truncateHash'
 
 interface DescriptionWithTxProps {
-  description?: string
-  txHash?: string
+	description?: string
+	txHash?: string
 }
 
 const DescriptionWithTx: React.FC<DescriptionWithTxProps> = ({ txHash, children }) => {
-  const { chainId } = useActiveWeb3React()
-  const { t } = useTranslation()
+	const { chainId } = useActiveWeb3React()
+	const { t } = useTranslation()
 
-  return (
-    <>
-      {typeof children === 'string' ? <Text as="p">{children}</Text> : children}
-      {txHash && (
-        <Link external href={getBscScanLink(txHash, 'transaction', chainId)}>
-          {t('View on BscScan')}: {truncateHash(txHash, 8, 0)}
-        </Link>
-      )}
-    </>
-  )
+	return (
+		<>
+			{typeof children === 'string' ? <Text as="p">{children}</Text> : children}
+			{txHash && (
+				<Link external href={getBscScanLink(txHash, 'transaction', chainId)}>
+					{t('View on BriseScan')}: {truncateHash(txHash, 8, 0)}
+				</Link>
+			)}
+		</>
+	)
 }
 
 export default DescriptionWithTx

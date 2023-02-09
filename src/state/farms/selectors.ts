@@ -45,6 +45,10 @@ const deserializeFarm = (farm: SerializedFarm): DeserializedFarm => {
       auctionHostingStartDate.getTime() < now &&
       auctionHostingEndDate.getTime() > now
     )
+    console.log(farm)
+    console.log(quoteTokenPriceBusd )
+   // console.log( deserializeToken(farm.token))
+    console.log(tokenPriceBusd)
 
   return {
     lpAddresses,
